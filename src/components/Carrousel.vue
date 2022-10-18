@@ -1,21 +1,27 @@
 <template>
-      <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 mt-80">
-        <div class="rounded overflow-hidden shadow-lg" v-for=" film in data" :key="film.episode_id">
-      <img class="w-full" src="/mountain.jpg" alt="Mountain">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{film.title}}</div>
-        <p class="text-gray-700 text-base">{{film.overview}}</p>
-      </div>
-      <div class="aspect-w-16 aspect-h-9">
-        <button></button>
-  <iframe src="https://www.youtube.com/embed/r9jwGansp1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div>
+    <div class="peliculas-recomendadas contenedor mt-80">
+			<div class="contenedor-titulo-controles">
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-carousel " >
+					<div class="carousel"  >
+						<div class="pelicula " v-for="film in data">
+							<a href="#"><img :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`" alt=""></a>
+						</div>
+					
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
 </div>
-
-    </div>
-    </div>
-
-
-
 
 </template>
 
