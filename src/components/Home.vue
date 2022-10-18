@@ -16,7 +16,6 @@
                                 <button  class=" px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-auto">
                                     <span class="text-white font-semibold"><i class="fa-solid fa-circle-info"></i>Mas Informacion</span>
                                 </button>
-                                <!-- <iframe class="w-full h-screen aspect-video      muted " src="\public\galeria\bombitas.mp4"></iframe>*/-->
 
 
                             </div>

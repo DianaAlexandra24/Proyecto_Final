@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+   		
+}
+
+
 @layer  base{
     body {
-        @apply bg-black		
-    }
+        @apply bg-black			
+}
 }
