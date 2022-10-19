@@ -20,11 +20,14 @@
 
                             </div>
                         </div>
+
                     </div>
                     
                 </div>
+                
+
                 </div>
-                                   
+                <PeliculasAPI></PeliculasAPI>
 
         </router-view>
 
@@ -35,6 +38,8 @@
 
 <script>
 import NavBar from './NavBar.vue';
+import Carrousel from "./Carrousel.vue"
+import PeliculasAPI from "./PeliculasAPI.vue"
 
 
 export  default{
@@ -49,7 +54,7 @@ export  default{
             alert("aca")
         }
     },
-    components: { NavBar }
+    components: { NavBar, Carrousel, PeliculasAPI }
 }
 </script>
 

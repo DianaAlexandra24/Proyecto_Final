@@ -13,6 +13,7 @@
     "swiper": "^8.4.4",
     "v-video-embed": "^1.0.8",
     "vue": "^3.2.37",
+    "vue-awesome-swiper": "^5.0.1",
     "vue-axios": "^3.5.0",
     "vue-l-carousel": "^1.1.0",
     "vue-owl-carousel": "^2.0.3",
