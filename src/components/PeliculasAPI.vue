@@ -12,7 +12,7 @@
     :modules="modules"
     class="mySwiper mt-80  " 
   > 
-    <swiper-slide v-for="film in data"> <a href="#"><img class="w-full h-full" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`" alt=""></a></swiper-slide>
+    <swiper-slide v-for="film in data" :key="film.id"><router-link to="Films/"> <img class="w-full h-full" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`" alt=""></router-link></swiper-slide>
   </swiper>
 </template>
 
@@ -61,6 +61,12 @@ export default {
         mounted(){
           this.getFilms()
         },
+        props:{
+
+        },
+        getId(url) {
+      return url.split("/").reverse()[1];
+    },
   setup() {
     return {
       modules: [Pagination, Navigation],

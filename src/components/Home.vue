@@ -30,7 +30,7 @@
 
 <script>
 import NavBar from './NavBar.vue';
-import Carrousel from "./Carrousel.vue"
+import Films from "./Films.vue"
 import PeliculasAPI from "./PeliculasAPI.vue"
 
 
@@ -46,7 +46,7 @@ export  default{
             alert("aca")
         }
     },
-    components: { NavBar, Carrousel, PeliculasAPI }
+    components: { NavBar, Films, PeliculasAPI }
 }
 </script>
 

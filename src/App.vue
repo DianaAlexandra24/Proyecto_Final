@@ -16,9 +16,9 @@
             <router-link to="/PeliculasAPI">Peliculas</router-link>
   
           </vs-navbar-item>
-          
+
           <vs-navbar-item  class="font-semibold hover:text-red-700	cursor-pointer">
-            <router-link to="/Carrousel">Proximos estrenos</router-link>
+            <router-link to="/Films">Proximos estrenos</router-link>
           </vs-navbar-item>
   
           </vs-navbar>
@@ -46,14 +46,14 @@
 <script>
 import NavBar from "./components/NavBar.vue"
 import PeliculasAPI from "./components/PeliculasAPI.vue"
-import Carrousel from "./components/Carrousel.vue"
+import Films from "./components/Films.vue"
 
 
 export default{
   components:{
     NavBar,
     PeliculasAPI,
-    Carrousel
+    Films
 },
   data(){
     return {
