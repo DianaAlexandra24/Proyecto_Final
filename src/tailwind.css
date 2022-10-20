@@ -22,8 +22,8 @@
 
 
 @layer  base{
-    body {
-        @apply bg-black			
+  body {
+      @apply bg-black			
 }
 
 }

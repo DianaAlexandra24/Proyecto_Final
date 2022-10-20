@@ -10,9 +10,9 @@
     }"
     :navigation="true"
     :modules="modules"
-    class="mySwiper mt-80  " 
+    class="mySwiper mt-40  " 
   > 
-    <swiper-slide v-for="film in data" :key="film.id"><router-link to="Films/"> <img class="w-full h-full" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`" alt=""></router-link></swiper-slide>
+    <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
   </swiper>
 </template>
 
@@ -20,7 +20,6 @@
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 import axios from "axios";
-
 
 // Import Swiper styles
 import "swiper/css";
@@ -62,6 +61,7 @@ export default {
           this.getFilms()
         },
         props:{
+   
 
         },
         getId(url) {

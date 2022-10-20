@@ -1,10 +1,13 @@
 <template>
-  <div>
-    <p v-if=loading>"Cargando informacion...."</p>
-    <h1 class="text-white" v-if="data">Detalles Peli {{data.overview}}</h1>
+ 
+    <div class=" bg-red-100	 w-96 h-96 ">
+      <p v-if="loading">Loading ....</p>
+      <main v-if="data">
+        <p> {{data.overview}}</p>
+      </main>
 
+    </div>
 
-  </div>
 </template>
     
     <script>
@@ -23,16 +26,12 @@
       },
         methods:{
           getFilms(){
-            axios.get(`https://api.themoviedb.org/3/find/${this.id}?api_key=b22a57acb6df2a99f477aab48d4a36c3&language=en-US&external_source=imdb_id`)
+            axios.get(`https://api.themoviedb.org/3/movie/${this.id}?api_key=b22a57acb6df2a99f477aab48d4a36c3&language=en-US`)
+            //axios.get(`https://api.themoviedb.org/3/find/${this.id}?api_key=b22a57acb6df2a99f477aab48d4a36c3&language=en-US&external_source=imdb_id`)
           .then(response => {
-            this.data = response.data.results
+            this.data = response.data
           })
-          .catch(error => {
-            console.log(error);
-          })
-          .then(() => {
-            this.loading = false;
-          })      
+          
         },
     
         },
