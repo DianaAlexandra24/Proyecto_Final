@@ -1,10 +1,10 @@
 <template>
-  <div class="text-white body-font fixed top-0 bg-gradient-to-b from-black w-full z-50">
+  <div class="text-white body-font fixed top-0 bg-gradient-to-b from-black w-full z-50 scroll-smooth ">
     <div class=" px-16 flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
               <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" class="w-24" alt="Netflix Logo">
           </a>
-          <vs-navbar target-scroll="#padding-scroll-content" padding-scroll center-collapsed v-model="active" class="flex gap-5 ml-5">
+          <vs-navbar target-scroll="#padding-scroll-content" padding-scroll center-collapsed v-model="active" class="flex gap-5 ml-5   ">
   
           <vs-navbar-item  class="font-semibold hover:text-red-700	cursor-pointer" >
             <router-link to="/">Inicio</router-link>
@@ -17,9 +17,7 @@
   
           </vs-navbar-item>
 
-          <vs-navbar-item  class="font-semibold hover:text-red-700	cursor-pointer">
-            <router-link to="/Films">Proximos estrenos</router-link>
-          </vs-navbar-item>
+
   
           </vs-navbar>
   

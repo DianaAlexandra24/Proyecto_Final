@@ -19,6 +19,7 @@
     "vue-owl-carousel": "^2.0.3",
     "vue-responsive-video-background-player": "^2.3.1",
     "vue-router": "^4.1.5",
+    "vue-videojs7": "^1.0.2",
     "vueperslides": "^3.4.2"
   },
   "devDependencies": {
