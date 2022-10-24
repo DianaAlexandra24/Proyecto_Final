@@ -8,7 +8,7 @@
       <p class="mb-3 font-light text-white dark:text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-white dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">{{data.original_title}}</p>
       <p class="font-light text-white dark:text-gray-300">{{data.overview}}</p>
 
-          <video class="mt-10" src="public\Germán Barceló-Bombitas de agua-Video-Backstage (720p_25fps_H264-128kbit_AAC).mp4" autoplay muted loop  controls></video>
+          <video class="mt-10" src="../../public/BombitasDeAgua.mp4" autoplay muted loop controls></video>
 
 
 

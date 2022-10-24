@@ -8,6 +8,6 @@
  export const routes = [
     {path:'/', component: Home},
     {path:'/PeliculasAPI', component: PeliculasAPI},
-    {path:'/components/Morefilms.vue', component: Morefilms},
+    {path:'/Morefilms', component: Morefilms},
     {path:'/Films/:id', component: Films, props:true}
   ]
