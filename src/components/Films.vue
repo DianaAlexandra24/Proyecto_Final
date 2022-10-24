@@ -9,10 +9,7 @@
       <p class="font-light text-white dark:text-gray-300">{{data.overview}}</p>
 
           <video class="mt-10" src="public\Germán Barceló-Bombitas de agua-Video-Backstage (720p_25fps_H264-128kbit_AAC).mp4" autoplay muted loop  controls></video>
-          <video class="w-full" autoplay controls>
-            <source src="public\Germán Barceló-Bombitas de agua-Video-Backstage (720p_25fps_H264-128kbit_AAC).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+
 
 
 

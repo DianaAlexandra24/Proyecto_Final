@@ -43,14 +43,14 @@
   </template>
 
 <script>
-import NavBar from "./components/NavBar.vue"
+import Morefilms from "./components/Morefilms.vue"
 import PeliculasAPI from "./components/PeliculasAPI.vue"
 import Films from "./components/Films.vue"
 
 
 export default{
   components:{
-    NavBar,
+    Morefilms,
     PeliculasAPI,
     Films
 },
