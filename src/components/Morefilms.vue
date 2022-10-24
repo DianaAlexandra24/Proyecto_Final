@@ -1,80 +1,59 @@
-<template>
-  
-    <swiper 
-      :slidesPerView="6"
-      :spaceBetween="30"
-      :slidesPerGroup="3"
-      :loop="true"
-      :loopFillGroupWithBlank="false"
-      :pagination="{
-        clickable: true,
-      }"
-      :navigation="true"
-      :modules="modules"
-      class="mySwiper mt-10  "> 
-      <div class="flex  mt-80 ml-10"> <h2 class="text-white text-2xl font-semibold "> Los 10 mas populares hoy </h2></div>
-      <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img class="hover:scale-110 transition duration-300 ease-in-out" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
-      <div class="flex  mt-80 ml-10"> <h2 class="text-white text-2xl font-semibold	 "> Tendencias ahora</h2></div>
-      <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img class="hover:scale-110 transition duration-300 ease-in-out" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
+<template >
+ 
+  <div class=" bg-neutral-800	w-full h-full	absolute ">
+    <p v-if="loading">Loading ....</p>
+    <main v-if="data">
+    <div class="mt-60 mb-20">
+      
+    <p class="mb-3 font-light text-white dark:text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-white dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">{{data.results[0].title}}</p>
+    <p class="font-light text-white dark:text-gray-300">{{data.results[0].overview}}</p>
 
-      </swiper>
+
+    </div>
+
+    
+
+
+  </main>
+ 
+
+
+  </div>
+    
+
+
   </template>
   
   <script>
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from "swiper/vue";
+
   import axios from "axios";
+
   
-  // Import Swiper styles
-  import "swiper/css";
-  
-  import "swiper/css/pagination";
-  import "swiper/css/navigation";
-  
-  
-  // import required modules
-  import { Pagination, Navigation } from "swiper";
-  
-  export default {
+    export default {
     data() {
-          return {
-            data: null,
-            loading:false,
-          }
-        },
-      components: {
-      Swiper,
-      SwiperSlide,
-    },
-      methods:{
-            getFilms(){
-              axios.get('https://api.themoviedb.org/3/movie/popular?api_key=b22a57acb6df2a99f477aab48d4a36c3&language=en-US&page=1')
-            .then(response => {
-              this.data = response.data.results
-            })
-            .catch(error => {
-              console.log(error);
-            })
-            .then(() => {
-              this.loading = false;
-            })      
-          },
-      
-          },
-          mounted(){
-            this.getFilms()
-          },
-          props:{
-     
-  
-          },
-          getId(url) {
-        return url.split("/").reverse()[1];
-      },
-    setup() {
       return {
-        modules: [Pagination, Navigation],
+        data: null,
+        loading:false,
+        autoplay:false
+       
       };
     },
-  };
-  </script>
+      methods:{
+        getFilms2(){
+          axios.get(`https://api.themoviedb.org/3/search/movie?api_key=b22a57acb6df2a99f477aab48d4a36c3&language=en-US&query=Harry%20Potter&page=1&include_adult=false`)
+        .then(response => {
+          this.data = response.data
+        })
+        
+      },
+  
+      },
+      mounted(){
+        this.getFilms2()
+      },
+
+  }
+      
+
+  
+    </script>
