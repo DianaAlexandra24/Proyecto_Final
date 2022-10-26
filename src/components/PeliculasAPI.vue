@@ -1,9 +1,9 @@
 <template>
-  <div class="main  relative">
+  <div class="main  relative" >
     <div class=" mt-20">
           <div class="flex   ml-10"> <h2 class="text-white text-2xl font-semibold	mb-0 "> Tendencias ahora</h2></div>
       <swiper 
-        :slidesPerView=" 6 " 
+        :breakpoints="swiperOptions.breakpoints"
         :spaceBetween="10"
         :slidesPerGroup="3"
         :loop="true"
@@ -17,14 +17,14 @@
         :navigation="true"
         :modules="modules"
        
-        class="mySwiper mt-10 overflow-hidden "> 
-        <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img class=" hover:scale-110 transition duration-300 ease-in-out h-48  w-full  object-cover " :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
+        class="mySwiper mt-10 object-cover "> 
+        <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img class=" hover:scale-110 transition duration-300 ease-in-out   sm:object-cover " :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
         </swiper>
     </div>
     <div class="mt-20 ">
-         <h2 class="text-white text-2xl font-semibold	 "> Los 10 mas populares hoy</h2>
+         <h2 class="text-white text-2xl font-semibold  ml-10	 "> Los 10 mas populares hoy</h2>
     <swiper 
-      :slidesPerView="6"
+      :breakpoints="swiperOptions.breakpoints"
       :spaceBetween="10"
       :slidesPerGroup="3"
       :loop="true"
@@ -35,7 +35,7 @@
       :navigation="true"
       :modules="modules"
       class="mySwiper mt-10 "> 
-      <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img class="hover:scale-110 transition duration-300 ease-in-out h-48  w-full flex flex-row sm:flex-col object-cover" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
+      <swiper-slide v-for="film in data" :key="film.id"><router-link :to="`Films/${film.id}`"><img class="hover:scale-110 transition duration-300 ease-in-out  flex flex-row sm:flex-col object-cover" :src="`https://image.tmdb.org/t/p/w500/${film.poster_path}`"></router-link></swiper-slide>
       </swiper>
 
       
@@ -65,6 +65,23 @@ export default {
         return {
           data: null,
           loading:false,
+          swiperOptions: {
+          breakpoints: {       
+      320: {       
+         slidesPerView: 1,
+         spaceBetween: 10     
+      },          
+      770: {       
+         slidesPerView: 2,       
+         spaceBetween: 50     
+      },   
+  
+      771: {       
+         slidesPerView: 4,       
+         spaceBetween: 30     
+      } 
+   }   
+        }
         }
       },
       
@@ -72,14 +89,7 @@ export default {
     Swiper,
     SwiperSlide,
   },
-  breakpoints: {
-          300: {
-            slidesPerView: 2
-          },
-          700: {
-      slidesPerView: 6
-    }
-        },
+
     methods:{
           getFilms(){
             axios.get('https://api.themoviedb.org/3/movie/popular?api_key=b22a57acb6df2a99f477aab48d4a36c3&language=en-US&page=1')
@@ -98,9 +108,9 @@ export default {
         mounted(){
           this.getFilms()
         },
-        props:{
-   
+        computed:{
 
+ 
         },
         getId(url) {
       return url.split("/").reverse()[1];
