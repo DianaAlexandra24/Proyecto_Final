@@ -1,7 +1,9 @@
 # Netflix Replica
 ## Introduction
 
-This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona. With it we aim to replicate Netflix web. 
+This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona. With it we aim to replicate Netflix web. This is the web url https://proyectofinal-5yq820hce-dianaalexandra24.vercel.app/ 
+
+![image](https://user-images.githubusercontent.com/72190510/198112684-63c44c17-4f96-4449-9423-2a2a4b2408a9.png)
 
 ## Technologies used
 
