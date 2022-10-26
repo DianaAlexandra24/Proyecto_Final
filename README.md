@@ -18,6 +18,10 @@ Las 10 más populares hoy shows a second carousel of films.
 
 When clicking on any film it takes you to Film component where you can see a description on the movie.
 
+<img width="960" alt="Netflix_morefilms_2" src="https://user-images.githubusercontent.com/72190510/198118549-c5e55305-ac59-4f36-9d08-6b1d8981c72b.png">
+
+When clicking on the button Reproducir it takes you to Morefilms component where a video is playing. 
+
 ## Technologies used
 
 For this project we have used Visual Studio Code as the code editor, Vue as Javascript framework, Tailwind as CSS framework.
