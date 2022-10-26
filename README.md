@@ -5,7 +5,7 @@ This is a student project that was created at [CodeOp](http://codeop.tech), a fu
 
 Home page
 
-![image](https://user-images.githubusercontent.com/72190510/198112684-63c44c17-4f96-4449-9423-2a2a4b2408a9.png)
+![image](https://user-images.githubusercontent.com/72190510/198114223-2a43e9d2-25be-446b-a386-175ebf433539.png)
 ![image](https://user-images.githubusercontent.com/72190510/198113222-79f7e903-58ab-4a47-9aec-e8e0b99f574b.png)
 ![image](https://user-images.githubusercontent.com/72190510/198113669-ce08dcf5-32de-4585-9e3a-ed7253aaf24b.png)
 
