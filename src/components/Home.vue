@@ -6,12 +6,12 @@
             <div class=" w-full h-full flex relative">
             <div class=" bg-gradient-to-t from-black w-full h-1/2   ">
                 <img  src="public\galeria\80594.jpg"  class=" w-full "> <img>
-                <router-link to="/Morefilms"> <button class=" rounded-lg bg-white py-2 justify-center item-center flex h-12 w-48  ml-12 absolute bottom-10">
+                <router-link to="/Morefilms"> <button class=" rounded-lg bg-white py-1 sm:py-2 justify-center item-center flex h-8 w-28 sm:h-12 w-48  ml-12 absolute bottom-10">
                     <span class="text-gray-800 font-semibold "> <i class="fa-solid fa-play "> </i>  Reproducir</span>
                 </button></router-link>
 
               
-                <button  class="rounded-lg bg-transparent py-2 justify-center flex h-12 w-48  ml-80 absolute  item-center bottom-10">
+                <button  class="rounded-lg bg-transparent invisible sm:visible py-2 justify-center flex h-12 w-48  ml-80 absolute  item-center bottom-10">
                  <span class="text-gray-100 font-semibold"><i class="fa-solid fa-circle-info"></i> Mas Informacion</span>
                  
                  </button>       
