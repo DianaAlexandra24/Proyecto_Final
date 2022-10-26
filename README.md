@@ -8,9 +8,15 @@ Home page
 
 <img width="960" alt="Netflix_home_1" src="https://user-images.githubusercontent.com/72190510/198114738-a21c5ee0-7c5e-4d08-81d9-83544ff6eb29.png">
 
-<img width="960" alt="Netflix_home_2" src="https://user-images.githubusercontent.com/72190510/198114836-158b1284-df07-47a1-a0c2-562cb997bac6.png">
+Tendencias ahora shows a carousel of films. 
 
 <img width="960" alt="Netflix_home_3" src="https://user-images.githubusercontent.com/72190510/198114867-d77e00a9-c354-46d0-9b55-1ddd85d81b6d.png">
+
+Las 10 más populares hoy shows a second carousel of films.
+
+<img width="960" alt="Netflix_home_2" src="https://user-images.githubusercontent.com/72190510/198114836-158b1284-df07-47a1-a0c2-562cb997bac6.png">
+
+When clicking on any film it takes you to Film component where you can see a description on the movie.
 
 ## Technologies used
 
