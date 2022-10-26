@@ -5,10 +5,12 @@ This is a student project that was created at [CodeOp](http://codeop.tech), a fu
 
 Home page
 
-![image](https://user-images.githubusercontent.com/72190510/198114223-2a43e9d2-25be-446b-a386-175ebf433539.png)
-![image](https://user-images.githubusercontent.com/72190510/198113222-79f7e903-58ab-4a47-9aec-e8e0b99f574b.png)
-![image](https://user-images.githubusercontent.com/72190510/198113669-ce08dcf5-32de-4585-9e3a-ed7253aaf24b.png)
 
+<img width="960" alt="Netflix_home_1" src="https://user-images.githubusercontent.com/72190510/198114738-a21c5ee0-7c5e-4d08-81d9-83544ff6eb29.png">
+
+<img width="960" alt="Netflix_home_2" src="https://user-images.githubusercontent.com/72190510/198114836-158b1284-df07-47a1-a0c2-562cb997bac6.png">
+
+<img width="960" alt="Netflix_home_3" src="https://user-images.githubusercontent.com/72190510/198114867-d77e00a9-c354-46d0-9b55-1ddd85d81b6d.png">
 
 ## Technologies used
 
