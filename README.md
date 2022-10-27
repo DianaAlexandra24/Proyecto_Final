@@ -1,14 +1,14 @@
 # Netflix Replica
+
 ## Introduction
 
-This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona. With it we aim to replicate Netflix web. This is the web url https://proyectofinal-5yq820hce-dianaalexandra24.vercel.app/ 
+This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona. With it we aim to replicate Netflix web. This is the web url <https://proyectofinal-5yq820hce-dianaalexandra24.vercel.app/>
 
 Home page
 
-
 <img width="960" alt="Netflix_home_1" src="https://user-images.githubusercontent.com/72190510/198114738-a21c5ee0-7c5e-4d08-81d9-83544ff6eb29.png">
 
-Tendencias ahora shows a carousel of films. 
+Tendencias ahora shows a carousel of films.
 
 <img width="960" alt="Netflix_home_3" src="https://user-images.githubusercontent.com/72190510/198114867-d77e00a9-c354-46d0-9b55-1ddd85d81b6d.png">
 
@@ -20,7 +20,7 @@ When clicking on any film it takes you to Film component where you can see a des
 
 <img width="960" alt="Netflix_morefilms_2" src="https://user-images.githubusercontent.com/72190510/198118549-c5e55305-ac59-4f36-9d08-6b1d8981c72b.png">
 
-When clicking on the button Reproducir it takes you to Morefilms component where a video is playing. 
+When clicking on the button Reproducir it takes you to Morefilms component where a video is playing.
 
 ## Technologies used
 
