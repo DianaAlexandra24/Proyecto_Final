@@ -2,11 +2,11 @@
     <router-view>
 
 
-        <section class="  w-screen  ">
-            <div class=" w-full h-full flex relative">
-            <div class=" bg-gradient-to-t from-black w-full h-1/2   ">
-                <img  src="/public/galeria/80594.jpg"  class="object-cover md:h-full md:w-full "> <img>
-                <router-link to="/Morefilms"> <button class=" rounded-lg bg-white py-2 justify-center item-center flex h-12 w-48  ml-12 absolute bottom-10 invisible  sm:visible">
+        <section class=" w-screen ">
+            <div class=" w-full h-full relative">
+            <div class=" bg-gradient-to-t from-black mt-24 sm:mt-0  relative  ">
+                <img  src="/public/galeria/80594.jpg"  class="object-cover w-full"> <img>
+                <router-link to="/Morefilms"> <button class=" rounded-lg bg-white py-2 justify-center item-center flex h-12 w-48  ml-12 absolute  bottom-10  invisible  sm:visible">
                     <span class="text-gray-800 font-semibold "> <i class="fa-solid fa-play "> </i>  Reproducir</span>
                 </button></router-link>
 

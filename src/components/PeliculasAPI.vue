@@ -68,17 +68,17 @@ export default {
           swiperOptions: {
           breakpoints: {       
       320: {       
-         slidesPerView: 1,
-         spaceBetween: 10     
+         slidesPerView: 2,
+         spaceBetween: 5     
       },          
       770: {       
-         slidesPerView: 2,       
-         spaceBetween: 50     
+         slidesPerView: 4,       
+         spaceBetween: 5      
       },   
   
       771: {       
-         slidesPerView: 4,       
-         spaceBetween: 30     
+         slidesPerView: 6,       
+         spaceBetween: 5      
       } 
    }   
         }
@@ -103,6 +103,7 @@ export default {
             this.loading = false;
           })      
         },
+ 
     
         },
         mounted(){
